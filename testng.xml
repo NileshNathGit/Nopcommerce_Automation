@@ -10,4 +10,5 @@
       <class name="script.launch"/>
     </classes>
   </test> <!-- Test -->
-</suite> <!-- Suite -->
+</suite> <!-- Suite -->  
+ 
