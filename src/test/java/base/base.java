@@ -18,6 +18,6 @@ public class base {
 		return driver;
 	}
 
-	public static final String _report = System.getProperty("user.dir")+"//reports/report.html";
+	public static final String _report = System.getProperty("user.dir")+"/reports/Automation_Report.html";
 
 }

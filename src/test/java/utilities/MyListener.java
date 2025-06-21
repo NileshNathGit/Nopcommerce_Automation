@@ -13,9 +13,9 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 public class MyListener implements ITestListener {
 	
 	
-	public ExtentSparkReporter sp; //UI of the Report
-	public ExtentReports er; //Populate Common info in the report
-	public ExtentTest tests; //Creating Test Entries in the report
+	public static ExtentSparkReporter sp; //UI of the Report
+	public static ExtentReports er; //Populate Common info in the report
+	public static ExtentTest tests; //Creating Test Entries in the report
 	
 	
 	
@@ -25,7 +25,7 @@ public class MyListener implements ITestListener {
 			System.out.println("Test Execution Started");
 			sp = new ExtentSparkReporter(base._report);
 			sp.config().setDocumentTitle("Automation Report");
-			sp.config().setReportName("Regression");
+			sp.config().setReportName("Regression Suite");
 			sp.config().setTheme(Theme.DARK);
 			
 			er = new ExtentReports();
@@ -34,26 +34,25 @@ public class MyListener implements ITestListener {
 			
 		}
 		
-//		public void onTestStart(ITestResult result)
-//		{
-//			tests = er.createTest(result.getName());
-//			tests.log(Status.PASS, "Test is started"+result.getName());
-//		}
+		public void onTestStart(ITestResult result) {
+	        tests = er.createTest(result.getMethod().getMethodName());
+	    }
 		public void onTestSuccess(ITestResult result)
 		{
-			tests = er.createTest(result.getName());
-			tests.log(Status.PASS, "Test is started"+result.getName());
+			
+			tests.log(Status.PASS, result.getName()+" Method Execution Completed!");
 		}
 		public void onTestFailure(ITestResult result)
 		{
-			tests = er.createTest(result.getName());
+			
 			tests.log(Status.FAIL, "Test is failed caused by "+result.getThrowable());
 		}
 		
-		public void onEnd(ITestContext context)
+		public void onFinish(ITestContext context)
 		{
-			
-			System.out.println("test ended");
+			  if (er != null) {
+		            er.flush();
+		        }		
 		}
 		
 		

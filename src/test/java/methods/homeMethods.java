@@ -1,22 +1,26 @@
 package methods;
 
 import org.openqa.selenium.WebDriver;
-import pageObjects.homePageObjects;
+
+import com.aventstack.extentreports.Status;
+
+import pageObjects.HomeObjects;
+import utilities.MyListener;
 
 public class homeMethods {
 	
 	public void homePageValidation(WebDriver driver)
 	{
-		String actual = driver.findElement(homePageObjects._logo).getText();
-		 String expected= "Qafox.com";
+		String actual = driver.findElement(HomeObjects._logo).getText();
+		String expected= "Qafox.com";
 		if(actual.equals(expected))
 		{
-			System.out.println("True");
+			MyListener.tests.log(Status.PASS, "Title is Correct");
 		}
 		else
 
 		{
-			System.out.println("False");
+			MyListener.tests.log(Status.FAIL, "Title is NOT Correct");
 		}
 		
 		

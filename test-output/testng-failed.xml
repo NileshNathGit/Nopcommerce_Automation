@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="script.launch">
+      <class name="script.Register">
         <methods>
-          <include name="home"/>
-          <include name="setUp"/>
+          <include name="register"/>
+          <include name="tearDown"/>
+          <include name="launch"/>
         </methods>
-      </class> <!-- script.launch -->
+      </class> <!-- script.Register -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
