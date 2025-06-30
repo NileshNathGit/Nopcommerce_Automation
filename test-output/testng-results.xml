@@ -1,39 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-21T12:28:16 IST" name="Suite" finished-at="2025-06-21T12:28:21 IST" duration-ms="5491">
+  <suite started-at="2025-06-30T21:40:16 IST" name="Default suite" finished-at="2025-06-30T21:40:22 IST" duration-ms="6396">
     <groups>
     </groups>
-    <test started-at="2025-06-21T12:28:16 IST" name="Test" finished-at="2025-06-21T12:28:21 IST" duration-ms="5491">
+    <test started-at="2025-06-30T21:40:16 IST" name="Default test" finished-at="2025-06-30T21:40:22 IST" duration-ms="6396">
       <class name="script.Register">
-        <test-method is-config="true" signature="launch()[pri:0, instance:script.Register@1040be71]" started-at="2025-06-21T12:28:18 IST" name="launch" finished-at="2025-06-21T12:28:20 IST" duration-ms="1300" status="PASS">
+        <test-method is-config="true" signature="launch()[pri:0, instance:script.Register@6f10d5b6]" started-at="2025-06-30T21:40:17 IST" name="launch" finished-at="2025-06-30T21:40:21 IST" duration-ms="4417" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="register()[pri:0, instance:script.Register@1040be71]" started-at="2025-06-21T12:28:20 IST" name="register" finished-at="2025-06-21T12:28:21 IST" duration-ms="1428" status="PASS">
+        <test-method signature="register()[pri:0, instance:script.Register@6f10d5b6]" started-at="2025-06-30T21:40:21 IST" name="register" finished-at="2025-06-30T21:40:22 IST" duration-ms="1252" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:script.Register@1040be71]" started-at="2025-06-21T12:28:21 IST" name="tearDown" finished-at="2025-06-21T12:28:21 IST" duration-ms="121" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:script.Register@6f10d5b6]" started-at="2025-06-30T21:40:22 IST" name="tearDown" finished-at="2025-06-30T21:40:22 IST" duration-ms="91" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- script.Register -->
-      <class name="script.HomePage">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:script.HomePage@6f10d5b6]" started-at="2025-06-21T12:28:16 IST" name="setUp" finished-at="2025-06-21T12:28:18 IST" duration-ms="2254" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="homePageValidation()[pri:0, instance:script.HomePage@6f10d5b6]" started-at="2025-06-21T12:28:18 IST" name="homePageValidation" finished-at="2025-06-21T12:28:18 IST" duration-ms="68" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- homePageValidation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:script.HomePage@6f10d5b6]" started-at="2025-06-21T12:28:18 IST" name="teardown" finished-at="2025-06-21T12:28:18 IST" duration-ms="70" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- script.HomePage -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

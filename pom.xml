@@ -44,6 +44,22 @@
 			<version>2.29.1</version>
 		</dependency>
 
+		<!--
+		https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.25.0</version>
+		</dependency>
+		
+		<!--
+		https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.25.0</version>
+		</dependency>
+
 		<!-- SLF4J simple implementation to eliminate warnings -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -79,5 +95,6 @@
 			</plugin>
 		</plugins>
 	</build>
+
 
 </project>
